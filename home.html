@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://cdn.tailwindcss.com"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,9 +11,9 @@
 <body>
     <div id="wrapper">
     <div class="nav" id="mynav">
-        <a href="#" class="active">About</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
+        <a href="#about" class="active">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
         <a href="#">Contact</a>
     </div>
     <div>
@@ -22,10 +23,142 @@
     </div>
     
     <!-- ABOUT ME SECTION -->
-    <div class="about-me" id="myabout">
-      <h1>Who am I?</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae eum provident nobis non voluptate aliquid. Veniam voluptatem quasi labore id, fugiat libero perferendis exercitationem facilis quae totam perspiciatis animi aliquam molestiae officia neque atque nobis praesentium saepe. Ab consequuntur molestias ut accusamus officia doloribus ullam optio provident dicta laudantium exercitationem quam odio obcaecati voluptatum beatae consequatur, dignissimos, totam inventore ad vero non possimus ratione. Amet cum vitae minus voluptatibus aliquam explicabo distinctio. Nesciunt quam fugit praesentium illo aut vel dolore nostrum deleniti rerum sed harum quia aliquid laborum possimus dicta quas quaerat, voluptate dolorem modi! Natus, a voluptatem sed molestias magnam sequi eveniet aut tenetur vero ipsam, itaque pariatur delectus ipsum in neque eligendi tempore dolor culpa! A, sunt facere.</p>
+    <div id="about" class="about-me" id="myabout">
+      <h1 class="right-margin-text">Who am I?</h1>
+      <p>I am a computer Science Graduate from Brunel University. I am a Front End Developer, I create websites various tools commonly known to the biggest markets of the web design and development Industry.</p>
+    </div>
+    
+    <div id="services" class="services-container">
+      <div class="services-width">
+      <h1 class="services-title">My Services</h1>
+      <div class="services-border"></div>
+      <div class="services-content">
+           <a href="#" class="services-content--box">
+              <div class="services-content__icon">
+                <img class="img-icon" src="./images/webdev-icon.png" alt="">
+              </div>
+                <div class="services-content__title">
+                  Web Development & Design
+                </div>
+                <div class="services-content__desc">
+                  I can develop websites like a boss! Also being capable of implementing a responsive design across all screen/device sizes.
+                </div>  
+           </a>
+           <a href="#" class="services-content--box">
+            <div class="services-content__icon">
+              <img class="img-icon" src="./images/webdev-icon.png" alt="">
+            </div>
+              <div class="services-content__title">
+                Database Engineering
+              </div>
+              <div class="services-content__desc">
+                I can develop Databases like a boss! Also being capable of implementing a responsive design across all screen/device sizes.
+              </div>  
+            </a>
+            <a href="#" class="services-content--box">
+              <div class="services-content__icon">
+                <img class="img-icon" src="./images/webdev-icon.png" alt="">
+              </div>
+                <div class="services-content__title">
+                  Web Development & Design
+                </div>
+                <div class="services-content__desc">
+                  I can develop websites like a boss! Also being capable of implementing a responsive design across all screen/device sizes.
+                </div>  
+            </a>
+            <a href="#" class="services-content--box">
+              <div class="services-content__icon">
+                <img class="img-icon" src="./images/webdev-icon.png" alt="">
+              </div>
+                <div class="services-content__title">
+                  Web Development & Design
+                </div>
+                <div class="services-content__desc">
+                  I can develop websites like a boss! Also being capable of implementing a responsive design across all screen/device sizes.
+                </div>  
+            </a> 
+      </div>
+      <!-- End of Service content 1 -->
+      <div class="services-border"></div>
+
+      <div class="services-content">
+        <!-- Link to open modal container bellow in line 85 -->
+        <!-- <a href="#modal" class="btn lightbox-btn">Inquire Now!</a> -->
+        <button data-text="Awesome" class="button">
+          <span class="actual-text">&nbsp;CV!&nbsp;</span>
+          <span class="hover-text" aria-hidden="true">&nbsp;CV!&nbsp;</span>
+        </button>
+
+        <div class="lightbox" id="modal">
+          <div class="lightbox-container">
+            <a href="#" class="btn lightbox-close"></a>
+            <div class="lightbox-content">
+              <div class="lightbox-content__title">
+                <p>Tell me whats your inquiry?</p>
+              </div>
+              <div class="lightbox-content__form">
+                <form action="#">
+                  <input type="text" class="form-control" placeholder="Your email address"> <br>
+                  <textarea class="form-control" placeholder="Type your enuiry here"></textarea>
+                
+                  <div class="lightbox-content__actions">
+                    <a href="#" class="btn lightbox-cancel">Cancel</a>
+                    <input type="submit" class="btn lightbox-submit" value="Send Inquiry">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     </div>
+    <div id="projects" class="projects-container">
+      <div class="projects-width">
+        <h1 class="projects-title"> Take a look at My Work</h1>
+        <div class="projects-border"></div>
+          <div class="projects-content">
+            <div class="card"><br>
+              <div class="sub-title__div">
+              <h3 class="sub-title title1">Front-End</h3>
+              <h3 class="sub-title title2">Course</h3>
+              <h3 class="sub-title title3">2022</h3>
+            </div>
+            </div>
+            <div class="card"><br>
+              <h3 class="sub-title title1">Blit-Core</h3>
+              <h3 class="sub-title title2">Co</h3>
+              <h3 class="sub-title title3">Developer</h3>
+
+            </div>
+            <div class="card"><br>
+              <h3 class="sub-title title1">E-Commerce</h3>
+              <h3 class="sub-title title2">Store</h3>
+              <h3 class="sub-title title3">Project</h3>
+
+            </div>
+            <div class="card"><br>
+              <h3 class="sub-title title1">Anime</h3>
+              <h3 class="sub-title title2">Quiz-Game</h3>
+              <h3 class="sub-title title3">Web-App</h3>
+
+            </div>
+          </div>          
+      </div>
+    </div>
+    <div class="services-content">
+    </div>
+
+    
+    <div class="services-content footer">
+      <div class="footer-content">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+    </div>
+
 </body>
 </html>
