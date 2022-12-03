@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="portfolio.css">
+  <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet">
   <title>Masi Emil</title>
 </head>
 <body>
@@ -21,11 +22,68 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
+
+    <div class="wrapper-profile" >
+      <!-- <div class="Profile_container">
+          <h1>Front</h1>
+          <h1>End</h1>
+          <h1>Dev</h1>
+        <div class="pcard pcard0">
+          <div class="profile_border">
+            <h2 class="hover_name">Masi</h2>
+            <div class="icons_facebook">
+              <a href="https://www.facebook.com">
+                <img
+                     class="indiv_icon"
+                     src={facebook}
+                     aria-label="Facebook">
+                </img>
+              </a>
+            </div>
+            <div class="icons_instagram">
+              <a href="https://www.instagram.com/">
+                <img
+                     class="indiv_icon"
+                     src={instagram}
+                     aria-label="Instagram">
+                </img>
+               </a>
+            </div>
+            <div class="icons_twitter">
+              <a href="https://twitter.com">
+                  <img
+                     class="indiv_icon"
+                     src={twitter}
+                     aria-label="Twitter">
+                  </img>
+                </a>
+            </div>
+            <div class="icons_linkedin">
+              <a href="https://www.linkedin.com">
+                 <img
+                      class="indiv_icon"
+                      src={linkedin}
+                      aria-label="LinkedIn">
+                  </img>
+                </a>
+            </div>
+          </div>
+        </div>
+  
+      </div> -->
+      <img class="portfolio-img__circle" src="./images/profilepic.png" alt="">
+      <div>
+      <h1>WEB</h1>
+      <h1>DESIGNER</h1>
+      <h1> & Developer</h1>
+      </div>
+  </div>
+  
     
     <!-- ABOUT ME SECTION -->
     <div id="about" class="about-me" id="myabout">
       <h1 class="right-margin-text">Who am I?</h1>
-      <p>I am a computer Science Graduate from Brunel University. I am a Front End Developer, I create websites various tools commonly known to the biggest markets of the web design and development Industry.</p>
+      <p>My name is Masi. I am a Data Analyst for The Entertainer LTD. I started this role at the start if 2022. I graduated from Brunel University where I studied a bachelor’s in computer science. On the side/ In my spare time I work on software Development Projects. I got into this after I achieved my Front-End Developer Certification Course from Skill soft which I gained after my studies.</p>
     </div>
     
     <div id="services" class="services-container">
@@ -33,20 +91,20 @@
       <h1 class="services-title">My Services</h1>
       <div class="services-border"></div>
       <div class="services-content">
-           <a href="#" class="services-content--box">
+           <a href="#webdevpic" class="services-content--box">
               <div class="services-content__icon">
                 <img class="img-icon" src="./images/webdev-icon.png" alt="">
               </div>
                 <div class="services-content__title">
                   Web Development & Design
                 </div>
-                <div class="services-content__desc">
+                <div id="webdevpic" class="services-content__desc">
                   I can develop websites like a boss! Also being capable of implementing a responsive design across all screen/device sizes.
                 </div>  
            </a>
            <a href="#" class="services-content--box">
             <div class="services-content__icon">
-              <img class="img-icon" src="./images/webdev-icon.png" alt="">
+              <img class="img-icon" src="./images/database-icon.png" alt="">
             </div>
               <div class="services-content__title">
                 Database Engineering
@@ -84,11 +142,13 @@
       <div class="services-content">
         <!-- Link to open modal container bellow in line 85 -->
         <!-- <a href="#modal" class="btn lightbox-btn">Inquire Now!</a> -->
-        <button data-text="Awesome" class="button">
+
+        <a href="#modal"><button data-text="Awesome" class="button">
           <span class="actual-text">&nbsp;CV!&nbsp;</span>
           <span class="hover-text" aria-hidden="true">&nbsp;CV!&nbsp;</span>
         </button>
-
+      </a>
+      
         <div class="lightbox" id="modal">
           <div class="lightbox-container">
             <a href="#" class="btn lightbox-close"></a>
@@ -103,7 +163,7 @@
                 
                   <div class="lightbox-content__actions">
                     <a href="#" class="btn lightbox-cancel">Cancel</a>
-                    <input type="submit" class="btn lightbox-submit" value="Send Inquiry">
+                    <input type="submit" class=" lightbox-submit" value="Send Inquiry">
                   </div>
                 </form>
               </div>
@@ -113,6 +173,10 @@
       </div>
     </div>
     </div>
+  </div>
+
+  <div id="wrapper">
+
     <div id="projects" class="projects-container">
       <div class="projects-width">
         <h1 class="projects-title"> Take a look at My Work</h1>
@@ -146,10 +210,11 @@
           </div>          
       </div>
     </div>
+  </div>
     <div class="services-content">
     </div>
 
-    
+
     <div class="services-content footer">
       <div class="footer-content">
       <a href="#about">About</a>
@@ -158,7 +223,6 @@
       <a href="#">Contact</a>
     </div>
   </div>
-    </div>
 
 </body>
 </html>
