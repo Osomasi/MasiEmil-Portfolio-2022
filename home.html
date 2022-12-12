@@ -7,22 +7,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="portfolio.css">
   <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet">
-  <title>Masi Emil</title>
+  <title>Masi Emil Portfolio</title>
 </head>
 <body>
-    <div id="wrapper">
+    <!-- Navigation Bar Section -->
+    <div class="wrapper"> <!--This is the whole wrapper class that covers the whole page-->
     <div class="nav" id="mynav">
         <a href="#about" class="active">About</a>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#footer">Contact</a>
     </div>
     <div>
       <a href="javascript:void(0);" class="navicon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
-
+    <!-- Logo and Title Section -->
     <div class="wrapper-profile" >
       <!-- <div class="Profile_container">
           <h1>Front</h1>
@@ -71,13 +72,16 @@
         </div>
   
       </div> -->
-      <img class="portfolio-img__circle" src="./images/profilepic.png" alt="">
-      <div>
-      <h1>WEB</h1>
-      <h1>DESIGNER</h1>
-      <h1> & Developer</h1>
+      <div class="pcard pcard0">
+      <!-- <img src="./images/profilepic.png" alt=""> -->
+      <h2>Masi</h2>
       </div>
-  </div>
+      <div class="portfolio-title">
+      <h1 class="title1">Web</h1>
+      <h1 class="title2" >Desginer</h1>
+      <h1 class="title3" >& Developer</h1>
+      </div>
+    </div>
   
     
     <!-- ABOUT ME SECTION -->
@@ -85,13 +89,13 @@
       <h1 class="right-margin-text">Who am I?</h1>
       <p>My name is Masi. I am a Data Analyst for The Entertainer LTD. I started this role at the start if 2022. I graduated from Brunel University where I studied a bachelor’s in computer science. On the side/ In my spare time I work on software Development Projects. I got into this after I achieved my Front-End Developer Certification Course from Skill soft which I gained after my studies.</p>
     </div>
-    
+    <!-- My Services section -->
     <div id="services" class="services-container">
       <div class="services-width">
       <h1 class="services-title">My Services</h1>
       <div class="services-border"></div>
       <div class="services-content">
-           <a href="#webdevpic" class="services-content--box">
+           <a href="" class="services-content--box">
               <div class="services-content__icon">
                 <img class="img-icon" src="./images/webdev-icon.png" alt="">
               </div>
@@ -102,7 +106,7 @@
                   I can develop websites like a boss! Also being capable of implementing a responsive design across all screen/device sizes.
                 </div>  
            </a>
-           <a href="#" class="services-content--box">
+           <a href="" class="services-content--box">
             <div class="services-content__icon">
               <img class="img-icon" src="./images/database-icon.png" alt="">
             </div>
@@ -113,7 +117,7 @@
                 I can develop Databases like a boss! Also being capable of implementing a responsive design across all screen/device sizes.
               </div>  
             </a>
-            <a href="#" class="services-content--box">
+            <a href="" class="services-content--box">
               <div class="services-content__icon">
                 <img class="img-icon" src="./images/webdev-icon.png" alt="">
               </div>
@@ -124,7 +128,7 @@
                   I can develop websites like a boss! Also being capable of implementing a responsive design across all screen/device sizes.
                 </div>  
             </a>
-            <a href="#" class="services-content--box">
+            <a href="" class="services-content--box">
               <div class="services-content__icon">
                 <img class="img-icon" src="./images/webdev-icon.png" alt="">
               </div>
@@ -138,7 +142,7 @@
       </div>
       <!-- End of Service content 1 -->
       <div class="services-border"></div>
-
+      <!-- CV Download Button -->
       <div class="services-content">
         <!-- Link to open modal container bellow in line 85 -->
         <!-- <a href="#modal" class="btn lightbox-btn">Inquire Now!</a> -->
@@ -148,10 +152,10 @@
           <span class="hover-text" aria-hidden="true">&nbsp;CV!&nbsp;</span>
         </button>
       </a>
-      
+      <!-- Modal for the Inquiry -- To be changed to downbload CV onclick -->
         <div class="lightbox" id="modal">
           <div class="lightbox-container">
-            <a href="#" class="btn lightbox-close"></a>
+            <a href="" class="btn lightbox-close"></a>
             <div class="lightbox-content">
               <div class="lightbox-content__title">
                 <p>Tell me whats your inquiry?</p>
@@ -162,7 +166,7 @@
                   <textarea class="form-control" placeholder="Type your enuiry here"></textarea>
                 
                   <div class="lightbox-content__actions">
-                    <a href="#" class="btn lightbox-cancel">Cancel</a>
+                    <a href="" class="btn lightbox-cancel">Cancel</a>
                     <input type="submit" class=" lightbox-submit" value="Send Inquiry">
                   </div>
                 </form>
@@ -173,21 +177,20 @@
       </div>
     </div>
     </div>
-  </div>
 
-  <div id="wrapper">
-
+    <!-- Projects Section -->
     <div id="projects" class="projects-container">
       <div class="projects-width">
         <h1 class="projects-title"> Take a look at My Work</h1>
         <div class="projects-border"></div>
           <div class="projects-content">
             <div class="card"><br>
-              <div class="sub-title__div">
+              <a href="https://www.linkedin.com/posts/osomasi-emil-inyang-397a261b8_im-happy-to-share-that-ive-obtained-a-new-activity-6998275723794771968-LWw1?utm_source=share&utm_medium=member_desktop">
+                <div class="sub-title__div">
               <h3 class="sub-title title1">Front-End</h3>
               <h3 class="sub-title title2">Course</h3>
               <h3 class="sub-title title3">2022</h3>
-            </div>
+            </div></a>
             </div>
             <div class="card"><br>
               <h3 class="sub-title title1">Blit-Core</h3>
@@ -195,34 +198,56 @@
               <h3 class="sub-title title3">Developer</h3>
 
             </div>
+            <a href="">
             <div class="card"><br>
               <h3 class="sub-title title1">E-Commerce</h3>
               <h3 class="sub-title title2">Store</h3>
               <h3 class="sub-title title3">Project</h3>
-
-            </div>
-            <div class="card"><br>
+            </div></a>
+            <a href="https://github.com/Osomasi/my-app">
+              <div class="card"><br>
               <h3 class="sub-title title1">Anime</h3>
               <h3 class="sub-title title2">Quiz-Game</h3>
               <h3 class="sub-title title3">Web-App</h3>
-
-            </div>
+            </div></a>
           </div>          
       </div>
     </div>
-  </div>
     <div class="services-content">
     </div>
-
-
-    <div class="services-content footer">
+    <!-- Footer Section -->
+    <footer class="wrapper">
+    <div id="footer" class="services-content footer">
       <div class="footer-content">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
+        <div class="footer-header">
+        <!-- <a href="#">Office</a> -->
+        <h1>Office</h1>
+          <p> Harrow on the Hill <br> London, Greater London <br>  HA20QN <br> +44 7979951158 </p>
+      </div>
+        <div class="footer-header">
+          <h1>Contact Me</h1>
+          <p>Please Find Inquiries Form here and <br> In the Contact section</p>
+        </div>
+        <div class="footer-header">
+          <h1>Social Media</h1>
+        <ul>
+          <!-- Twitter -->
+          <li><a href="https://twitter.com/_Masi_l"><img src="./images/twitter-icon.png" width="36" height="32" viewBox="0 0 24 24" alt=""></a> </li>
+          <!-- GitHub -->
+          <li> <a href="https://github.com/Osomasi"><img src="./images/github-icon.png" width="36" height="32" viewBox="0 0 24 24" alt=""></a></li>
+          <!-- LinkedIn -->
+          <li><a href="https://www.linkedin.com/in/osomasi-emil-inyang-397a261b8/"><img src="./images/linkedin.png" width="36" height="32" viewBox="0 0 24 24" alt=""></a></li>
+          <!--Instagram-->
+          <li><a href="https://www.instagram.com/_masi_l/"><img src="./images/instagram-icon.png" width="36" height="36" viewBox="0 0 24 24" alt=""> </a></li>
+
+        </ul>
+        </div>    
     </div>
   </div>
+    </footer>
+</div>
+
+</div>
 
 </body>
 </html>

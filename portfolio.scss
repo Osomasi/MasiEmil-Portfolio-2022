@@ -5,27 +5,63 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
   }
-  #wrapper{
+  .wrapper >*{
     border: 1px solid #000;
     max-width: 900px;
-    top: 50%;
-    left: 50%;
-    margin: 0;
-    align-content: center;
 }
 
 /*-----------------------------------Profile Picture section-----------------------------------*/
 
 .wrapper-profile{
-  background-color: white;
   display: inline-flex;
+  width: 100%;
   padding: 5rem;
-  max-width: 900px;
   margin-top: 30px;
+  margin: 0 auto;
+  // margin-left: 250px;
+  justify-content: center;
 }
-.Profile_container 
-{
+// .wrapper-profile .portfolio-img__circle{
+//   flex: 0.5;
+
+// }
+// .wrapper-profile img{
+//   height: 400px;
+//   width: 400px;  
+//   float: left;
+//   border-radius: 100%;
+  
+// }
+
+
+.wrapper-profile .portfolio-title h1{
+  height: 140px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+.wrapper-profile .title1{
+  color: blueviolet;
+  margin-left: -40px;
+  font-size: 50px;
+
+}
+.wrapper-profile .title2{
+  color: pink;
+  font-size: 50px;
+
+}
+.wrapper-profile .title3{
+  color: white;
+  margin-left: -40px;
+  font-size: 50px;
+}
+
+
+.Profile_container{
   top: 90%;
   height: 310px;
   width: 310px;
@@ -44,19 +80,6 @@ body {
 
 }
 
-.wrapper-profile h1{
-  grid-template-rows: auto auto auto;
-  line-height: 6;
-  height: 100px;
-}
-.wrapper-profile .portfolio-img__circle{
-  width: 33%; height: auto;
-  min-width: 150px;
-  float: left;
-  border-radius: 50%;
-  -webkit-shape-outside:circle();
-  shape-outside:circle();}
-
 .profile_border 
 {
   flex: 2;
@@ -71,8 +94,8 @@ body {
 
 .pcard 
 {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
   border-radius: 100%;
   background: #808080;
   transition: background 0.8s;
@@ -87,16 +110,17 @@ body {
 
 .pcard0 
 {
-  background: url("./images/profilepic.png") center center;
+  background: url("./images/profilepic-cropped.png") center center no-repeat;
   background-size: 400px;
   background-position: top center;
+  
 }
 
 .pcard0:hover 
 {
   background: url("./images/profilepic.png") left center no-repeat;
-  background-size: 255px;
-  background-color: #1a1a1a;
+  background-size: 300px;
+  background-color: black;
   background-blend-mode: luminosity;
 }
 
@@ -242,7 +266,7 @@ body {
   /* NAV BAR SECTION */
   /* For Desktop View and above */
   @media only screen and (min-width: 701px){
-    #wrapper{
+    .wrapper{
         border: 1px solid #000;
         max-width: 900px;
         margin: auto;
@@ -266,14 +290,14 @@ body {
   
   }
   
-  /* For Mobile Screen to Tablet View */
-  @media only screen and (min-width:55px) and (max-width:700px){
-    #wrapper{
-      border: 1px solid #000;
-      max-width: 700px;
-      margin: auto;
-  }
-  
+                                                              /* For Mobile Screen to Tablet View */
+  @media only screen and (min-width:55px) and (max-width:819px){
+    .wrapper>*{
+      max-width: 819px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
     .navicon{
         color: white;
         margin-left: auto;
@@ -330,7 +354,7 @@ body {
     color: white;
   }
   .services-content:hover{
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.5s;
   }
   
   
@@ -473,7 +497,7 @@ body {
       }
       &-btn {
         background-color: #039BE5;
-        color: #EEEEEE;
+        color: black;
         margin: auto;
         padding: 10px;
         border-radius: 10px;
@@ -598,11 +622,67 @@ margin-bottom: 10px;
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
-@media only screen and (min-width: 55px) and (max-width: 700px) {
+@media only screen and (min-width: 55px) and (max-width: 819px) {
+  .wrapper>*{
+    max-width: 819px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .projects-content{
     display: grid;
     grid-template-columns: repeat(1,1fr);
   }
+  // .wrapper-profile{
+  //   width: 100%;
+  //   margin-top: 30px;
+  //   margin: 0 auto;
+  //   justify-content: center;
+  // }
+  .wrapper-profile{
+    display: grid;
+    padding: 5rem;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  
+  .wrapper-profile .portfolio-title h1{
+    display: inline;
+    text-align: center;
+    height: 50px;
+    font-size: 21px;
+    margin: auto;
+    padding: 10px;
+  //  display: none;
+  }
+  .portfolio-title{
+    margin-top: 20px;
+  }
+  .wrapper-profile .title1{
+    color: blueviolet;
+
+  }
+  .wrapper-profile .title2{
+    color: pink;
+
+  }
+  .wrapper-profile .title3{
+    color: white;
+  }
+  .pcard0 
+  {
+    background: url("./images/profilepic-cropped.png") center center no-repeat;
+    height: max-content;
+    width: max-content;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .pcard0:hover 
+{
+  background: url("./images/profilepic-cropped.png") left center no-repeat;
+  background-size: 250px;
+  background-color: black;
+  background-blend-mode: luminosity;
+}
   
 }
   
@@ -688,8 +768,28 @@ margin-bottom: 10px;
 
 
 .footer-content{
-  width: 100%;
+  display: inline-flex;
+  max-width: 100%;
+  // background-color: lightblue;
+  height: 200px;
+  gap: 80px;
+}
+.footer-header h1{
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.footer-header p{
+  padding: 10px;
+  text-align: left;
+  font-size: 9px;
+  justify-content: center;
+}
+.footer-header ul li a img{ 
+  // margin-left: 20px;
   text-align: center;
-  background-color: lightblue;
-  padding: 20px;
+  &:hover{
+      cursor: pointer;
+    }
 }
