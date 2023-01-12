@@ -12,6 +12,9 @@ body {
 
 .wrapper > * {
   max-width: 900px;
+  align-content: center;
+  align-self: center;
+  margin: 0;
 }
 
 /*-----------------------------------Profile Picture section-----------------------------------*/
