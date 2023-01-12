@@ -60,7 +60,9 @@ body{
   margin-left: -40px;
   font-size: 50px;
 }
-
+.right-margin-text{
+  text-align: justify;
+}
 
 .Profile_container{
   top: 90%;
@@ -295,7 +297,7 @@ body{
                                                               /* For Mobile Screen to Tablet View */
   @media only screen and (min-width:55px) and (max-width:819px){
     .wrapper>*{
-      max-width: 819px;
+      max-width: 750px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -303,10 +305,9 @@ body{
     .navicon{
         color: white;
         margin-left: auto;
-  }
-    .nav a{
         display: none;
-    }
+
+  }
   }
   
   .services-container{
@@ -788,6 +789,7 @@ margin-bottom: 10px;
   text-align: left;
   font-size: 9px;
   justify-content: center;
+  color: white;
 }
 .footer-header ul li a img{ 
   // margin-left: 20px;
